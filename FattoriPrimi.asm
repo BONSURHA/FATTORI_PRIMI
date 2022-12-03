@@ -1,5 +1,5 @@
 .data 0x10010000
-risultati:
+fattori_primi:
 
 
 .text
@@ -11,7 +11,7 @@ redo:           slt $t3, $s2, $0
                 j load
 negative:       abs $s3, $s2
 		        li $v1, 1
-load:           la $s0, risultati
+load:           la $s0, fattori_primi
                 move $s1, $s0
                 
 
